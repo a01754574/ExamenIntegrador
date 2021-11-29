@@ -7,9 +7,9 @@ using namespace std;
 int main() {
 
     MusicPlayer mp;
-    Song s1("Run Rudolph Run", "Chuck Berry");
-    Song s2("Santa Claus is Coming to Town", "Bruce Springsteen");
-    Song s3("Jingle Bell Rock", "Bobby Helms");
+    Song s1 = Song("Run Rudolph Run", "Chuck Berry");
+    Song s2 = Song("Santa Claus is Coming to Town", "Bruce Springsteen");
+    Song s3 = Song("Jingle Bell Rock", "Bobby Helms");
     
     cout << "Song 1 title: " << s1.getTitle() << "\n";
     cout << "Song 2 artist: " << s2.getArtist() << "\n";

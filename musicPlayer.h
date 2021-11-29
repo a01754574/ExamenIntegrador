@@ -10,7 +10,7 @@ class MusicPlayer {
         Song playing;
     
     public:
-        MusicPlayer();
+        MusicPlayer(): state('s') {} ;
 
         void play(Song newSong);
         void pause();

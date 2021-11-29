@@ -12,7 +12,7 @@ class Song {
     
     public:
         Song();
-        Song(string title, string artist, int rating);
+        Song(string title, string artist);
 
         string getTitle() {return title;};
         string getArtist() {return artist;};

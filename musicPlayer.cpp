@@ -11,20 +11,21 @@ void MusicPlayer::play(Song newSong) {
 
 void MusicPlayer::pause()  {
     if (state == 'y') {state = 'p'; }
-    else if (state == 'p') {state = 'y';};
+    else if (state == 'p') {state = 'y';}
+    else {state = 'y';}
 }
 
-void MusicPlayer::stop(){
+void MusicPlayer::stop() {
     state = 's';
 }
 
-void MusicPlayer::print()  {
+void MusicPlayer::print() {
     if (state == 's')  {
         puts("Nothing playing");
     } else if (state == 'p') {
         puts("On hold");
     } else {
-        puts("Playing");
+        printf("Playing: %s\n", playing.getTitle().c_str());
     }
 }
 
